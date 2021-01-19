@@ -27,24 +27,24 @@ HITO 1
 2.[x] Agregar el permiso de Internet al manifiesto.
 
 3.[x] Agregar ROOM como dependencia.
-4.[] Definir la Data Class de nombre SuperheroCharacter que va a servir como entidad de la
+4.[x] Definir la Data Class de nombre SuperheroCharacter que va a servir como entidad de la
 DB. Esta misma clase puede ser utilizada para procesar la respuesta de la API dada la
 naturaleza del problema.
-5.[] Definir la interfaz Dao para obtener y guardar los personajes.
-6.[] Agregar la clase que extiende de RoomDatabase y que será construida por
+5.[x] Definir la interfaz Dao para obtener y guardar los personajes.
+6.[x] Agregar la clase que extiende de RoomDatabase y que será construida por
 Room.databaseBuilder.
-7.[]Crear la función getDatabase que permita obtener una instancia única de la BD. Una
+7.[x]Crear la función getDatabase que permita obtener una instancia única de la BD. Una
 forma de hacerlo es usando el patrón Singleton.
-8.[] Agregar Retrofit como dependencia. Para convertir JSON una alternativa es utilizar
+8.[x] Agregar Retrofit como dependencia. Para convertir JSON una alternativa es utilizar
 Gson agregando la dependencia.
-9.[] Crear la interfaz para consumir la API REST que tiene los superhéroes. El endpoint que
+9.[x] Crear la interfaz para consumir la API REST que tiene los superhéroes. El endpoint que
 se va a utilizar es /all.json para obtener la lista completa de superhéroes.
-10.[] Crear la implementación para utilizar Retrofit. La forma recomendada es utilizar un
+10.[x] Crear la implementación para utilizar Retrofit. La forma recomendada es utilizar un
 factory que devuelve la instancia del servicio a utilizar.
-11.[] Crear el repositorio (la clase que implementa el patrón Repository) que permite
+11.[x] Crear el repositorio (la clase que implementa el patrón Repository) que permite
 acceder y actualizar los datos. Para esto se debe:
-[]Exponer la información de la DB usando DAO y LiveData.
-[]Una función que permita actualizar la lista de superheroes desde la API.
+[x]Exponer la información de la DB usando DAO y LiveData.
+[x]Una función que permita actualizar la lista de superheroes desde la API.
 
  */
 
