@@ -44,21 +44,21 @@ dependencies {
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
 
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-
-
-    //coil
+//coil
     implementation "io.coil-kt:coil:0.11.0"
-    //Retrofit
-    implementation "com.squareup.retrofit2:retrofit:2.9.0"
-    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     //LiveData
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
     //ViewModel
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
-    //Test
-    testImplementation 'androidx.room:room-testing:2.2.6'
+    //test
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //Corutinas
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.2'
     //by viewmodels
     implementation "androidx.activity:activity-ktx:1.1.0"
     //Room

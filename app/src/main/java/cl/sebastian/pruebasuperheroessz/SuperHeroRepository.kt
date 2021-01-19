@@ -6,7 +6,9 @@ import androidx.lifecycle.MutableLiveData
 
 class SuperHeroRepository {
 
-    val superList = MutableLiveData<List<Heroes>>()
+   // val superList = MutableLiveData<List<Heroes>>()
+   val database=SuperApplication.superDataBase!!
+    val superList=database.heroesDao().getHeroes()
 
 
     suspend fun getSuperHeroFromApi(){
@@ -20,7 +22,7 @@ class SuperHeroRepository {
         when (response.isSuccessful) {
             true -> {
                 response.body()?.let {
-                    superList.value = it
+                    database.heroesDao().insertHeroes(it)
                     Log.d("Repo-getSuperHero", "getSuperHeroFromApi con :${it.size} Heroes")
                 }
 
