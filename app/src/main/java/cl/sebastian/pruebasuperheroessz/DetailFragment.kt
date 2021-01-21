@@ -21,21 +21,20 @@ lateinit var  binding: FragmentDetailBinding
         savedInstanceState: Bundle?
     ): View? {
         binding= FragmentDetailBinding.inflate(layoutInflater)
-viewModel.getDetail().observe(viewLifecycleOwner,{
-            it?.let {
-                binding.tvFullName.text=it.biography.fullName
-                binding.tvHeroDetail.text=it.name
-               // binding.tvPublisher.text=it.biography.alignment
-                binding.ivDetail.load(it.images.lg)
-                binding.tvInteligencia.text=it.powerstats.intelligence.toString()
-                binding.tvCombate.text=it.powerstats.combat.toString()
-                binding.tvDurabilidad.text=it.powerstats.durability.toString()
-                binding.tvPoder.text=it.powerstats.power.toString()
-                binding.tvVelocidad.text=it.powerstats.speed.toString()
-                binding.tvFuerza.text=it.powerstats.strength.toString()
-
-
-}
+viewModel.getDetail().observe(viewLifecycleOwner, {
+    it?.let {
+        binding.tvFullName.text = it.biography.fullName
+        binding.tvHeroDetail.text = it.name
+        // binding.tvPublisher.text=it.biography.alignment
+        binding.ivDetail.load(it.images.lg)
+        binding.tvInteligencia.text = it.powerstats.intelligence.toString()
+        binding.tvCombate.text = it.powerstats.combat.toString()
+        binding.tvDurabilidad.text = it.powerstats.durability.toString()
+        binding.tvPoder.text = it.powerstats.power.toString()
+        binding.tvVelocidad.text = it.powerstats.speed.toString()
+        binding.tvFuerza.text = it.powerstats.strength.toString()
+        binding.tvHeight.text = it.appearance.height.toString()
+    }
 })
 
 
