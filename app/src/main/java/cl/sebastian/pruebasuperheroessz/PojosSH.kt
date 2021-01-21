@@ -5,9 +5,11 @@ import androidx.lifecycle.LiveData
 import androidx.room.*
 
 @Entity(tableName = "superHeroes")
-data class Heroes (@PrimaryKey val id:Int, val name:String, @Embedded val images:Img, @Embedded val biography:Biografia)
+data class Heroes (@PrimaryKey val id:Int, val name:String, @Embedded val images:Img, @Embedded val biography:Biografia, @Embedded val powerstats:PowerStats)
 data class Img (val lg:String)
+data class PowerStats(val intelligence:Int,val strength:Int, val speed:Int, val durability :Int, val power:Int, val combat:Int)
 data class Biografia(val fullName:String)
+
 
 @Dao
 interface HeroesDao{
