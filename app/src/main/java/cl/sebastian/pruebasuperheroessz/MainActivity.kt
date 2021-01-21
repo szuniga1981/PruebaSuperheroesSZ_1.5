@@ -48,7 +48,7 @@ acceder y actualizar los datos. Para esto se debe:
 
  */
 
-class MainActivity : AppCompatActivity() {
+/*class MainActivity : AppCompatActivity() {
     lateinit var binding:ActivityMainBinding
 val viewModel:SuperHeroVM by viewModels()
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -61,5 +61,12 @@ val viewModel:SuperHeroVM by viewModels()
             adapter.updateList(it)}
         })
         setContentView(binding.root)
+    }
+}*/
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
     }
 }

@@ -5,18 +5,22 @@ import androidx.lifecycle.LiveData
 import androidx.room.*
 
 @Entity(tableName = "superHeroes")
-data class Heroes (@PrimaryKey val id:Int, val name:String, @Embedded val images:Img)
+data class Heroes (@PrimaryKey val id:Int, val name:String, @Embedded val images:Img, @Embedded val biography:Biografia)
 data class Img (val lg:String)
+data class Biografia(val fullName:String)
 
 @Dao
 interface HeroesDao{
 
-   @Insert
+   @Insert(onConflict = OnConflictStrategy.REPLACE)
    suspend fun insertHeroes(lista:List<Heroes>)
 
 
    @Query("SELECT * FROM superHeroes")
    fun getHeroes(): LiveData<List<Heroes>>
+
+   @Query("SELECT * FROM superHeroes where id=:code")
+   fun getHeroesDetail(code: Int):LiveData<Heroes>
 
 }
 @Database(entities = [Heroes::class],version=1)

@@ -2,12 +2,18 @@ package cl.sebastian.pruebasuperheroessz
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.RecyclerView
 import cl.sebastian.pruebasuperheroessz.databinding.ItemListShBinding
-import coil.api.load
+
+import coil.load
+import timber.log.Timber
 
 class HeroAdapter: RecyclerView.Adapter<HeroesVH>() {
-    var heroesList= listOf<Heroes>()
+   private var heroesList= listOf<Heroes>()
+    private val selectedHero= MutableLiveData<Heroes>()
+    fun selectedHero():LiveData<Heroes> = selectedHero
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HeroesVH {
@@ -18,6 +24,10 @@ class HeroAdapter: RecyclerView.Adapter<HeroesVH>() {
     override fun onBindViewHolder(holder: HeroesVH, position: Int) {
        val heroes=heroesList[position]
         holder.bind(heroes)
+        holder.itemView.setOnClickListener{
+            Timber.d("mostrando DetailFragment")
+            selectedHero.value=heroes
+        }
     }
 
     override fun getItemCount(): Int {
@@ -32,10 +42,11 @@ class HeroAdapter: RecyclerView.Adapter<HeroesVH>() {
 
 }
 
-class HeroesVH(val binding: ItemListShBinding):RecyclerView.ViewHolder(binding.root) {
+class HeroesVH(val binding:ItemListShBinding ):RecyclerView.ViewHolder(binding.root) {
     fun bind(heroes: Heroes) {
         binding.tvHero.text=heroes.name
         binding.ivHero.load(heroes.images.lg)
+
 
     }
 
