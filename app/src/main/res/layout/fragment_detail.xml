@@ -17,14 +17,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.069"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/tv_hero_detail"
         android:layout_width="111dp"
         android:layout_height="26dp"
         android:layout_marginStart="25dp"
-        android:text="tv Nombre Personaje"
+        android:text="@string/tv_nombre_personaje"
         app:layout_constraintStart_toEndOf="@+id/iv_detail"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -35,7 +36,7 @@
         android:layout_height="20dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="24dp"
-        android:text="Nombre Personaje :"
+        android:text="@string/nombre_personaje"
         app:layout_constraintStart_toEndOf="@+id/iv_detail"
         app:layout_constraintTop_toBottomOf="@+id/tv_fullName" />
 
@@ -47,7 +48,7 @@
         android:layout_height="29dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="66dp"
-        android:text="Nombre Real :"
+        android:text="@string/nombre_real"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/iv_detail"
         app:layout_constraintTop_toTopOf="parent" />
@@ -58,7 +59,7 @@
         android:layout_height="wrap_content"
 
         android:layout_marginStart="25dp"
-        android:text="tv Nombre Real"
+        android:text="@string/tv_nombre_real"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/iv_detail"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -76,7 +77,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:text="tvInteligencia"
+        android:text="@string/tvinteligencia"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
 
@@ -86,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:text="tvFuerza"
+        android:text="@string/tvfuerza"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvInteligencia" />
 
@@ -96,7 +97,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:text="tvVelocidad"
+        android:text="@string/tvvelocidad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvFuerza" />
 
@@ -106,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:text="tvDurabilidad"
+        android:text="@string/tvdurabilidad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvVelocidad" />
 
@@ -116,7 +117,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:text="tvPoder"
+        android:text="@string/tvpoder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvDurabilidad" />
 
@@ -126,7 +127,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:text="tvCombate"
+        android:text="@string/tvcombate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvPoder" />
 
@@ -136,7 +137,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Inteligencia"
+        android:text="@string/inteligencia"
         app:layout_constraintEnd_toStartOf="@+id/tvInteligencia"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
 
@@ -146,7 +147,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Fuerza"
+        android:text="@string/fuerza"
         app:layout_constraintEnd_toStartOf="@+id/tvFuerza"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -156,7 +157,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Velocidad"
+        android:text="@string/velocidad"
         app:layout_constraintEnd_toStartOf="@+id/tvVelocidad"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -166,7 +167,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Durabilidad"
+        android:text="@string/durabilidad"
         app:layout_constraintEnd_toStartOf="@+id/tvDurabilidad"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -176,7 +177,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Poder"
+        android:text="@string/poder"
         app:layout_constraintEnd_toStartOf="@+id/tvPoder"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
@@ -186,7 +187,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        android:text="Combate"
+        android:text="@string/combate"
         app:layout_constraintEnd_toStartOf="@+id/tvCombate"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 

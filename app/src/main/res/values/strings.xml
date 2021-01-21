@@ -1,5 +1,21 @@
 <resources>
     <string name="app_name">PruebaSuperheroesSZ</string>
     <string name="textview">TextView</string>
+    <string name="tv_nombre_personaje">tv Nombre Personaje</string>
+    <string name="tvvelocidad">tvVelocidad</string>
+    <string name="tvpoder">tvPoder</string>
+    <string name="nombre_personaje">Nombre Personaje :</string>
+    <string name="inteligencia">Inteligencia</string>
+    <string name="tvdurabilidad">tvDurabilidad</string>
+    <string name="fuerza">Fuerza</string>
+    <string name="tvinteligencia">tvInteligencia</string>
+    <string name="nombre_real">Nombre Real :</string>
+    <string name="tv_nombre_real">tv Nombre Real</string>
+    <string name="tvfuerza">tvFuerza</string>
+    <string name="tvcombate">tvCombate</string>
+    <string name="velocidad">Velocidad</string>
+    <string name="durabilidad">Durabilidad</string>
+    <string name="poder">Poder</string>
+    <string name="combate">Combate</string>
     <string name="todo">TODO</string>
 </resources>
